@@ -30,7 +30,7 @@ consistent with food's ~45% weight in India's CPI basket.
 - Engle & Granger (1987, Econometrica)
 
 ## Data
-Data sourced from RBI DBIE (https://dbie.rbi.org.in).
+Data sourced from RBI DBIE (https://data.rbi.org.in/DBIE/#/dbie/home).
 Download the monthly macroeconomic indicators file and 
 place it in the `data/` folder before running the notebook.
 
