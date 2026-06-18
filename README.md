@@ -2,16 +2,23 @@
 ### End-to-End Macro-Econometric Pipeline | RBI Monthly Data (Oct 2017 – Jun 2025)
 
 ## Overview
-Forecasts India's headline CPI year-on-year % change using a 
-four-layer variable selection pipeline and SARIMAX/VAR modelling 
+## Overview
+
+Forecasts India's headline CPI year-on-year % change using a
+four-layer variable selection pipeline and SARIMAX/VAR modelling
 on RBI macroeconomic data.
 
-**Key result:** VAR model achieved MAE of X pp on 12-month 
-walk-forward out-of-sample evaluation, outperforming 
-SARIMAX(2,0,2)×(1,1,0,12).
+**Key result:** VAR achieved lower out-of-sample error than SARIMAX
+across all three metrics (MAE 0.73pp vs 1.23pp, RMSE 0.88pp vs
+1.60pp, MAPE 21.0% vs 35.7%) on a 12-month walk-forward evaluation.
+A Diebold-Mariano test (p = 0.117) did not find this difference
+statistically significant — with only 12 out-of-sample observations
+the test has limited power, so this is treated as directional
+evidence rather than a confirmed result. See Results below for the
+full breakdown.
 
-**Dominant finding:** Inflation inertia via food price levels 
-(CPI_FOOD) is the strongest short-run predictor of headline CPI, 
+**Dominant finding:** Inflation inertia via food price levels
+(CPI_FOOD) is the strongest short-run predictor of headline CPI,
 consistent with food's ~45% weight in India's CPI basket.
 
 ## Methodology
